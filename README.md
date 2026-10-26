@@ -46,15 +46,16 @@ _The Instance addons management:_
 ```bash
 CITADEL_HIVE_TOKEN=01H7G0A9JK6P5430N8PBTEJ9PH
 CITADEL_HIVE_HOST=http://localhost:3000
+MONGO_URL=mongodb://localhost:27017/
+PASSWORD_SALT="YOUR SALT"
+JWT_SECRET="YOUR SECRET"
 ```
 
 5. Run `npm run build:js; npm run build:css` to build the web_src components (small tailwind and react components)
 6. In 2 differents consoles, run:
    - `go run .`
    - `cd citadel-drone; cargo run`
-7. You can open the Citadel UI in your browser with [http://localhost:3000](http://localhost:3000) and connect with these credentials:
-   - username: `dev@citadel.io`
-   - password: `password`
+7. You can open the Citadel UI in your browser with [http://localhost:3000](http://localhost:3000) and create an account.
 
 ## Contributing
 
